@@ -9,15 +9,12 @@
 @theme {
 
   --font-poppins: var(--font-poppins);
-
-  --color-background: #fdfcfb;
+  --color-home-background: #f7f6f5;
+  --color-background: #fbfaf9;
   --color-foreground: #1f1a18;
-
+  --color-neutral-background: #f4f2f0;
   --color-card: #fefefe;
   --color-card-foreground: #1f1a18;
-
-  --color-popover: #fefefe;
-  --color-popover-foreground: #1f1a18;
 
   --color-primary: #191614;
   --color-primary-foreground: #fdfcfb;

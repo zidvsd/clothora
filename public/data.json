@@ -1,0 +1,669 @@
+[
+  {
+    "id": "minimalist-tee-001",
+    "name": "Essential Cotton T-Shirt",
+    "category": "t-shirt",
+    "price": 45,
+    "description": "Premium organic cotton t-shirt with a relaxed fit. Soft hand-feel and perfect drape.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Ivory", "hex": "#FAF7F2" },
+      { "name": "Charcoal", "hex": "#2B2825" },
+      { "name": "Stone", "hex": "#B5ADA6" },
+      { "name": "Sage", "hex": "#9CAA9E" }
+    ],
+    "images": {
+      "main": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=800&fit=crop",
+      "hover": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=800&fit=crop"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "structured-polo-001",
+    "name": "Boxy Cropped Polo",
+    "category": "polo-shirt",
+    "price": 78,
+    "description": "Modern interpretation of the classic polo. Cropped length with a boxy silhouette.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Cream", "hex": "#F5F0E8" },
+      { "name": "Navy", "hex": "#1F2937" },
+      { "name": "Olive", "hex": "#6B7044" }
+    ],
+    "images": {
+      "main": "https://images.unsplash.com/photo-1625910513413-c23b13bb9a69?w=600&h=800&fit=crop",
+      "hover": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=800&fit=crop"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "ribbed-tank-001",
+    "name": "Ribbed Cotton Tank",
+    "category": "sleeveless",
+    "price": 35,
+    "description": "Lightweight ribbed tank top. Perfect for layering or wearing alone.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Beige", "hex": "#D4C5B9" }
+    ],
+    "images": {
+      "main": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&h=800&fit=crop",
+      "hover": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?w=600&h=800&fit=crop"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "wool-bomber-001",
+    "name": "Merino Wool Bomber",
+    "category": "jackets",
+    "price": 225,
+    "description": "Luxurious merino wool bomber jacket. Minimalist design with ribbed cuffs.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Camel", "hex": "#C19A6B" },
+      { "name": "Charcoal", "hex": "#36454F" }
+    ],
+    "images": {
+      "main": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=800&fit=crop",
+      "hover": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=600&h=800&fit=crop"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "tailored-pants-001",
+    "name": "Wide Leg Trousers",
+    "category": "pants",
+    "price": 125,
+    "description": "High-waisted wide leg trousers in a fluid fabric. Effortless elegance.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Sand", "hex": "#C2B280" },
+      { "name": "Midnight", "hex": "#191970" },
+      { "name": "Khaki", "hex": "#8B8680" }
+    ],
+    "images": {
+      "main": "/api/placeholder/600/800",
+      "hover": "/api/placeholder/600/800"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "linen-shirt-001",
+    "name": "Oversized Linen Shirt",
+    "category": "t-shirt",
+    "price": 88,
+    "description": "Breathable linen shirt with an oversized fit. Perfect for warm weather.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Natural", "hex": "#F5E6D3" },
+      { "name": "Sky", "hex": "#87CEEB" }
+    ],
+    "images": {
+      "main": "/api/placeholder/600/800",
+      "hover": "/api/placeholder/600/800"
+    },
+    "inStock": false,
+    "featured": false
+  },
+  {
+    "id": "knit-polo-001",
+    "name": "Textured Knit Polo",
+    "category": "polo-shirt",
+    "price": 95,
+    "description": "Textured knit polo with subtle pattern. Elevated casual wear.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Moss", "hex": "#8A9A5B" },
+      { "name": "Clay", "hex": "#B66A50" }
+    ],
+    "images": {
+      "main": "/api/placeholder/600/800",
+      "hover": "/api/placeholder/600/800"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "mesh-tank-001",
+    "name": "Athletic Mesh Tank",
+    "category": "sleeveless",
+    "price": 42,
+    "description": "Breathable mesh tank with moisture-wicking properties.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Pearl", "hex": "#F8F8FF" },
+      { "name": "Graphite", "hex": "#41424C" }
+    ],
+    "images": {
+      "main": "/api/placeholder/600/800",
+      "hover": "/api/placeholder/600/800"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "tech-jacket-001",
+    "name": "Technical Shell Jacket",
+    "category": "jackets",
+    "price": 195,
+    "description": "Water-resistant technical jacket with minimalist aesthetic.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Storm", "hex": "#4F5D75" },
+      { "name": "Forest", "hex": "#228B22" }
+    ],
+    "images": {
+      "main": "/api/placeholder/600/800",
+      "hover": "/api/placeholder/600/800"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "cargo-pants-001",
+    "name": "Utility Cargo Pants",
+    "category": "pants",
+    "price": 110,
+    "description": "Modern cargo pants with functional pockets and tapered fit.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Tan", "hex": "#D2B48C" },
+      { "name": "Black", "hex": "#000000" }
+    ],
+    "images": {
+      "main": "/api/placeholder/600/800",
+      "hover": "/api/placeholder/600/800"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "henley-shirt-001",
+    "name": "Waffle Henley Shirt",
+    "category": "t-shirt",
+    "price": 58,
+    "description": "Textured waffle knit henley with three-button placket. Relaxed fit with rolled sleeves.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Oatmeal", "hex": "#D4C4B0" },
+      { "name": "Rust", "hex": "#A8412F" },
+      { "name": "Indigo", "hex": "#3B4C72" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "cropped-cardigan-001",
+    "name": "Merino Cropped Cardigan",
+    "category": "jackets",
+    "price": 145,
+    "description": "Luxurious merino wool cardigan with mother-of-pearl buttons. Cropped silhouette.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Caramel", "hex": "#C4915C" },
+      { "name": "Ash", "hex": "#B2B2B2" },
+      { "name": "Blush", "hex": "#E5C4B5" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "wide-leg-jeans-001",
+    "name": "Wide Leg Denim",
+    "category": "pants",
+    "price": 118,
+    "description": "Vintage-inspired wide leg jeans in rigid denim. High-rise with relaxed fit.",
+    "sizes": ["24", "25", "26", "27", "28", "29", "30", "31", "32"],
+    "colors": [
+      { "name": "Ecru", "hex": "#F4F2E6" },
+      { "name": "Washed Black", "hex": "#4A4A4A" },
+      { "name": "Light Indigo", "hex": "#6B8CAE" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "mock-neck-001",
+    "name": "Cotton Mock Neck",
+    "category": "sleeveless",
+    "price": 42,
+    "description": "Sleeveless mock neck top in soft organic cotton. Fitted silhouette.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Bone", "hex": "#F9F7F4" },
+      { "name": "Espresso", "hex": "#3C2415" },
+      { "name": "Pistachio", "hex": "#C8D5B9" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "overshirt-001",
+    "name": "Textured Overshirt",
+    "category": "jackets",
+    "price": 138,
+    "description": "Heavyweight cotton overshirt with chest pockets. Can be worn as a light jacket.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Tobacco", "hex": "#8B5A3C" },
+      { "name": "Sage Green", "hex": "#87A96B" },
+      { "name": "Ink Blue", "hex": "#062E57" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "pleated-shorts-001",
+    "name": "Pleated Bermuda Shorts",
+    "category": "pants",
+    "price": 88,
+    "description": "Tailored bermuda shorts with front pleats. Mid-rise with relaxed thigh.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Linen", "hex": "#FAF0E6" },
+      { "name": "Olive Branch", "hex": "#646B43" },
+      { "name": "Slate", "hex": "#5B6670" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "v-neck-sweater-001",
+    "name": "Cashmere V-Neck",
+    "category": "jackets",
+    "price": 225,
+    "description": "Pure cashmere v-neck sweater. Classic fit with ribbed trim.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Pearl", "hex": "#F8F6F0" },
+      { "name": "Charcoal", "hex": "#36454F" },
+      { "name": "Burgundy", "hex": "#800020" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "button-shirt-001",
+    "name": "Oversized Button Shirt",
+    "category": "t-shirt",
+    "price": 98,
+    "description": "Oversized cotton poplin shirt. Drop shoulder with curved hem.",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Stripe", "hex": "#E8E8E8" },
+      { "name": "Chambray", "hex": "#91A3B0" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "muscle-tank-001",
+    "name": "Dropped Armhole Tank",
+    "category": "sleeveless",
+    "price": 38,
+    "description": "Athletic-inspired tank with dropped armholes. Lightweight jersey fabric.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Sand", "hex": "#C2B280" },
+      { "name": "Washed Navy", "hex": "#2C3E50" },
+      { "name": "Mint", "hex": "#AEDCC0" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "track-pants-001",
+    "name": "Relaxed Track Pants",
+    "category": "pants",
+    "price": 95,
+    "description": "Modern track pants in technical fabric. Elasticated waist with tapered leg.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Stone Grey", "hex": "#928E85" },
+      { "name": "Forest", "hex": "#2C5F2D" },
+      { "name": "Carbon", "hex": "#1C1C1C" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "linen-shirt-011",
+    "name": "Premium Linen Shirt",
+    "category": "shirts",
+    "price": 95,
+    "description": "Breathable premium linen shirt perfect for warm weather. Features mother-of-pearl buttons and relaxed fit.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Natural", "hex": "#F5F0E8" },
+      { "name": "Sky", "hex": "#B8D4E3" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "bomber-jacket-012",
+    "name": "Classic Bomber Jacket",
+    "category": "jackets",
+    "price": 145,
+    "description": "Timeless bomber jacket with ribbed cuffs and hem. Water-resistant fabric with smooth satin lining.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Charcoal", "hex": "#36454F" },
+      { "name": "Camel", "hex": "#C19A6B" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "cargo-pants-013",
+    "name": "Utility Cargo Pants",
+    "category": "pants",
+    "price": 89,
+    "description": "Functional cargo pants with multiple pockets. Durable cotton twill with adjustable hem.",
+    "sizes": ["28", "30", "32", "34", "36"],
+    "colors": [
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Tan", "hex": "#D2B48C" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "tank-top-014",
+    "name": "Athletic Tank Top",
+    "category": "sleeveless",
+    "price": 35,
+    "description": "Lightweight athletic tank with moisture-wicking fabric. Perfect for workouts or casual wear.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Beige", "hex": "#E8DCC6" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "knit-sweater-015",
+    "name": "Merino Knit Sweater",
+    "category": "jackets",
+    "price": 125,
+    "description": "Luxurious merino wool sweater with ribbed texture. Temperature regulating and odor resistant.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Moss", "hex": "#8A9A5B" },
+      { "name": "Clay", "hex": "#B66A50" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "trousers-016",
+    "name": "Tailored Trousers",
+    "category": "pants",
+    "price": 110,
+    "description": "Sharp tailored trousers with pressed crease. Stretch wool blend for comfort and style.",
+    "sizes": ["28", "30", "32", "34", "36", "38"],
+    "colors": [
+      { "name": "Midnight", "hex": "#191970" },
+      { "name": "Khaki", "hex": "#C3B091" },
+      { "name": "Sand", "hex": "#C2B280" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "mesh-shirt-017",
+    "name": "Performance Mesh Shirt",
+    "category": "sleeveless",
+    "price": 55,
+    "description": "Breathable mesh athletic shirt with anti-odor technology. Quick-dry fabric for intense workouts.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Pearl", "hex": "#FBFCF8" },
+      { "name": "Graphite", "hex": "#41424C" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "shell-jacket-018",
+    "name": "Windbreaker Shell",
+    "category": "jackets",
+    "price": 165,
+    "description": "Lightweight windbreaker shell with packable design. DWR coating for weather protection.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Storm", "hex": "#4F5D75" },
+      { "name": "Forest", "hex": "#0B4D2C" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "linen-shirt-011",
+    "name": "Premium Linen Shirt",
+    "category": "shirts",
+    "price": 95,
+    "description": "Breathable premium linen shirt perfect for warm weather. Features mother-of-pearl buttons and relaxed fit.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Natural", "hex": "#F5F0E8" },
+      { "name": "Sky", "hex": "#B8D4E3" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "bomber-jacket-012",
+    "name": "Classic Bomber Jacket",
+    "category": "jackets",
+    "price": 145,
+    "description": "Timeless bomber jacket with ribbed cuffs and hem. Water-resistant fabric with smooth satin lining.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Charcoal", "hex": "#36454F" },
+      { "name": "Camel", "hex": "#C19A6B" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "cargo-pants-013",
+    "name": "Utility Cargo Pants",
+    "category": "pants",
+    "price": 89,
+    "description": "Functional cargo pants with multiple pockets. Durable cotton twill with adjustable hem.",
+    "sizes": ["28", "30", "32", "34", "36"],
+    "colors": [
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Tan", "hex": "#D2B48C" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "tank-top-014",
+    "name": "Athletic Tank Top",
+    "category": "sleeveless",
+    "price": 35,
+    "description": "Lightweight athletic tank with moisture-wicking fabric. Perfect for workouts or casual wear.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Beige", "hex": "#E8DCC6" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "knit-sweater-015",
+    "name": "Merino Knit Sweater",
+    "category": "jackets",
+    "price": 125,
+    "description": "Luxurious merino wool sweater with ribbed texture. Temperature regulating and odor resistant.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Moss", "hex": "#8A9A5B" },
+      { "name": "Clay", "hex": "#B66A50" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "trousers-016",
+    "name": "Tailored Trousers",
+    "category": "pants",
+    "price": 110,
+    "description": "Sharp tailored trousers with pressed crease. Stretch wool blend for comfort and style.",
+    "sizes": ["28", "30", "32", "34", "36", "38"],
+    "colors": [
+      { "name": "Midnight", "hex": "#191970" },
+      { "name": "Khaki", "hex": "#C3B091" },
+      { "name": "Sand", "hex": "#C2B280" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "mesh-shirt-017",
+    "name": "Performance Mesh Shirt",
+    "category": "sleeveless",
+    "price": 55,
+    "description": "Breathable mesh athletic shirt with anti-odor technology. Quick-dry fabric for intense workouts.",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "name": "Pearl", "hex": "#FBFCF8" },
+      { "name": "Graphite", "hex": "#41424C" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "shell-jacket-018",
+    "name": "Windbreaker Shell",
+    "category": "jackets",
+    "price": 165,
+    "description": "Lightweight windbreaker shell with packable design. DWR coating for weather protection.",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": [
+      { "name": "Storm", "hex": "#4F5D75" },
+      { "name": "Forest", "hex": "#0B4D2C" }
+    ],
+    "images": {
+      "main": "",
+      "hover": ""
+    },
+    "inStock": true,
+    "featured": false
+  }
+]
