@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ProductsProvider from "@/components/ProductsProvider";
+import PageAnimation from "@/lib/animate/PageAnimation";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -26,7 +27,8 @@ export default function RootLayout({
       >
         <ProductsProvider />
         <Navbar />
-        {children}
+        <PageAnimation>{children}</PageAnimation>
+
         <Footer />
       </body>
     </html>

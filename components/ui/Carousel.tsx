@@ -1,23 +1,25 @@
 "use client";
-
+import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import { useProductsStore } from "@/store/useProductsStore";
-
+import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "motion/react";
+import { carouselContainer, container, item } from "@/lib/animate/animate";
 import { useEffect } from "react";
-
 export default function Carousel() {
-  const { products, loading, error, fetchProducts } = useProductsStore();
+  const { products } = useProductsStore();
   const filteredProductsLatest = products?.filter(
-    (product) => product.featured === true
+    (product) => product.latest === true
   );
-
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: {
       perView: 1,
       spacing: 15,
     },
+    mode: "free",
     breakpoints: {
       "(min-width: 768px)": {
         slides: {
@@ -40,14 +42,82 @@ export default function Carousel() {
     },
   });
 
+  useEffect(() => {
+    if (instanceRef.current) {
+      setTimeout(() => {
+        instanceRef.current?.update();
+      }, 100); // delay to wait for motion animations
+    }
+  }, [instanceRef, filteredProductsLatest]);
+
   return (
-    <div ref={sliderRef} className="keen-slider w-full h-[300px]">
-      {filteredProductsLatest?.map((product, index) => (
-        <div key={index} className="text-neutral-600 keen-slider__slide">
-          <h3>{product.name}</h3>
-          <h3>${product.price}</h3>
-        </div>
-      ))}
+    <div className="relative w-full">
+      {/* Slider */}
+      <div ref={sliderRef} className="keen-slider w-full">
+        <motion.div
+          variants={carouselContainer}
+          initial="hidden"
+          animate="show"
+          className="w-full flex"
+        >
+          {filteredProductsLatest?.map((product, index) => (
+            <motion.div
+              key={index}
+              variants={item}
+              className="keen-slider__slide"
+            >
+              <Link
+                href={`/collections/${product.category}/${product.id}`}
+                key={index}
+                className="group text-neutral-600 h-[480px]  flex flex-col"
+              >
+                {/* Image wrapper */}
+                <div className="relative h-[420px] w-full overflow-hidden">
+                  {/* Default image */}
+                  <Image
+                    fill
+                    src={product.images.main}
+                    alt={product.name}
+                    className={`object-cover transition-all duration-300 ${
+                      product.images.hover
+                        ? "group-hover:opacity-0"
+                        : "group-hover:scale-110"
+                    }`}
+                  />
+                  {/* Hover image (only if available) */}
+                  {product.images.hover && (
+                    <Image
+                      fill
+                      src={product.images.hover}
+                      alt={product.name}
+                      className="object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                    />
+                  )}
+                </div>
+                {/* Text below image */}
+                <h3 className="mt-2">{product.name}</h3>
+                <h3 className="text-sm text-neutral-600">${product.price}</h3>
+              </Link>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Prev Button */}
+      <button
+        onClick={() => instanceRef.current?.prev()}
+        className="hidden cursor-pointer xl:flex absolute top-1/2 -left-6 -translate-y-1/2 p-2 bg-white shadow-md rounded-full hover:bg-neutral-100"
+      >
+        <ChevronLeft className="h-6 w-6 text-black" />
+      </button>
+
+      {/* Next Button */}
+      <button
+        onClick={() => instanceRef.current?.next()}
+        className="hidden cursor-pointer xl:flex absolute top-1/2 -right-6 -translate-y-1/2 p-2 bg-white shadow-md rounded-full hover:bg-neutral-100"
+      >
+        <ChevronRight className="h-6 w-6 text-black" />
+      </button>
     </div>
   );
 }

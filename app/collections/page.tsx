@@ -1,7 +1,7 @@
 export default function Collections() {
   return (
     <div
-      className="
+      className="custom-container
     "
     >
       <h1>Collections</h1>

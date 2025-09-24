@@ -18,6 +18,7 @@ type Product = {
   images: Images;
   inStock: boolean;
   featured: boolean;
+  latest: boolean;
 };
 type ProductsState = {
   products: Product[] | null;

@@ -8,7 +8,7 @@ export default function CategoryPage({
   const { slug } = use(params);
   return (
     <div
-      className="
+      className="custom-container
     "
     >
       <h1>{slug}</h1>

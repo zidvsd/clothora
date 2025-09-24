@@ -13,8 +13,7 @@
       { "name": "Sage", "hex": "#9CAA9E" }
     ],
     "images": {
-      "main": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=800&fit=crop",
-      "hover": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=800&fit=crop"
+      "main": "/img/tshirt-ivory-CCMbsUcY.jpg"
     },
     "inStock": true,
     "featured": true
@@ -32,8 +31,7 @@
       { "name": "Olive", "hex": "#6B7044" }
     ],
     "images": {
-      "main": "https://images.unsplash.com/photo-1625910513413-c23b13bb9a69?w=600&h=800&fit=crop",
-      "hover": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=800&fit=crop"
+      "main": "/img/polo-cream-Y1QPfFU8.jpg"
     },
     "inStock": true,
     "featured": true
@@ -51,8 +49,7 @@
       { "name": "Beige", "hex": "#D4C5B9" }
     ],
     "images": {
-      "main": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&h=800&fit=crop",
-      "hover": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?w=600&h=800&fit=crop"
+      "main": "/img/tank-beige-BAEroHEo.jpg"
     },
     "inStock": true,
     "featured": false
@@ -69,8 +66,7 @@
       { "name": "Charcoal", "hex": "#36454F" }
     ],
     "images": {
-      "main": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=800&fit=crop",
-      "hover": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=600&h=800&fit=crop"
+      "main": "/img/bomber-camel-DJ_5isn3.jpg"
     },
     "inStock": true,
     "featured": true
@@ -88,8 +84,7 @@
       { "name": "Khaki", "hex": "#8B8680" }
     ],
     "images": {
-      "main": "/api/placeholder/600/800",
-      "hover": "/api/placeholder/600/800"
+      "main": "/img/trousers-sand-B7vCRRVC.jpg"
     },
     "inStock": true,
     "featured": false
@@ -106,8 +101,7 @@
       { "name": "Sky", "hex": "#87CEEB" }
     ],
     "images": {
-      "main": "/api/placeholder/600/800",
-      "hover": "/api/placeholder/600/800"
+      "main": "/img/linen-natural-gHz6rCDh.jpg"
     },
     "inStock": false,
     "featured": false
@@ -124,8 +118,8 @@
       { "name": "Clay", "hex": "#B66A50" }
     ],
     "images": {
-      "main": "/api/placeholder/600/800",
-      "hover": "/api/placeholder/600/800"
+      "main": "/img/knit-merino-DPYarzeO.jpg",
+      "hover": "/img/knit-moss-D-t_d5b2.jpg"
     },
     "inStock": true,
     "featured": false
@@ -142,8 +136,8 @@
       { "name": "Graphite", "hex": "#41424C" }
     ],
     "images": {
-      "main": "/api/placeholder/600/800",
-      "hover": "/api/placeholder/600/800"
+      "main": "/img/mesh-performance-DAN3yAAh.jpg",
+      "hover": "/img/mesh-pearl-CRa09Fy-.jpg"
     },
     "inStock": true,
     "featured": false
@@ -160,8 +154,7 @@
       { "name": "Forest", "hex": "#228B22" }
     ],
     "images": {
-      "main": "/api/placeholder/600/800",
-      "hover": "/api/placeholder/600/800"
+      "main": "/img/shell-storm-Dl4uf06V.jpg"
     },
     "inStock": true,
     "featured": true
@@ -178,8 +171,7 @@
       { "name": "Black", "hex": "#000000" }
     ],
     "images": {
-      "main": "/api/placeholder/600/800",
-      "hover": "/api/placeholder/600/800"
+      "main": "/img/cargo-tan-DdEdL0iS.jpg"
     },
     "inStock": true,
     "featured": false
@@ -197,8 +189,7 @@
       { "name": "Indigo", "hex": "#3B4C72" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/henley-oatmeal-5_72bOEB.jpg"
     },
     "inStock": true,
     "featured": false
@@ -216,8 +207,7 @@
       { "name": "Blush", "hex": "#E5C4B5" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/cardigan-caramel-CRf0PgDi.jpg"
     },
     "inStock": true,
     "featured": true
@@ -235,8 +225,7 @@
       { "name": "Light Indigo", "hex": "#6B8CAE" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/widejeans-ecru-B--xbB22.jpg"
     },
     "inStock": true,
     "featured": false
@@ -254,8 +243,7 @@
       { "name": "Pistachio", "hex": "#C8D5B9" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/mockneck-bone-DF-DQiFf.jpg"
     },
     "inStock": true,
     "featured": false
@@ -273,8 +261,7 @@
       { "name": "Ink Blue", "hex": "#062E57" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/overshirt-tobacco-CtXSvEfZ.jpg"
     },
     "inStock": true,
     "featured": false
@@ -292,8 +279,7 @@
       { "name": "Slate", "hex": "#5B6670" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/shorts-linen-Cdm5DyHO.jpg"
     },
     "inStock": true,
     "featured": false
@@ -311,8 +297,7 @@
       { "name": "Burgundy", "hex": "#800020" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/vneck-pearl-Cfqklty8.jpg"
     },
     "inStock": true,
     "featured": true
@@ -330,8 +315,7 @@
       { "name": "Chambray", "hex": "#91A3B0" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/buttonshirt-white-B5eCg0XZ.jpg"
     },
     "inStock": true,
     "featured": false
@@ -349,8 +333,7 @@
       { "name": "Mint", "hex": "#AEDCC0" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/muscle-sand-C6xk1XAW.jpg"
     },
     "inStock": true,
     "featured": false
@@ -368,8 +351,7 @@
       { "name": "Carbon", "hex": "#1C1C1C" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/trackpants-grey-Cl9z6v31.jpg"
     },
     "inStock": true,
     "featured": false
@@ -404,11 +386,12 @@
       { "name": "Camel", "hex": "#C19A6B" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/bomber-luxury-D-2V7ue4.jpg",
+      "hover": "/img/bomber-charcoal-CH19CKH2.jpg"
     },
     "inStock": true,
-    "featured": true
+    "featured": true,
+    "latest": true
   },
   {
     "id": "cargo-pants-013",
@@ -422,8 +405,7 @@
       { "name": "Tan", "hex": "#D2B48C" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/cargo-tan-DdEdL0iS.jpg"
     },
     "inStock": true,
     "featured": false
@@ -441,11 +423,12 @@
       { "name": "Beige", "hex": "#E8DCC6" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/tank-athletic-DqPxNFkO.jpg",
+      "hover": "/img/tank-white-DVjVnSB0.jpg"
     },
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "latest": true
   },
   {
     "id": "knit-sweater-015",
@@ -459,8 +442,8 @@
       { "name": "Clay", "hex": "#B66A50" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/knit-merino-DPYarzeO.jpg",
+      "hover": "/img/knit-moss-D-t_d5b2.jpg"
     },
     "inStock": true,
     "featured": false
@@ -478,11 +461,12 @@
       { "name": "Sand", "hex": "#C2B280" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/trousers-tailored-CsGYFGlZ.jpg",
+      "hover": "/img/trousers-midnight-DOPOKw06.jpg"
     },
     "inStock": true,
-    "featured": true
+    "featured": true,
+    "latest": true
   },
   {
     "id": "mesh-shirt-017",
@@ -496,8 +480,8 @@
       { "name": "Graphite", "hex": "#41424C" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/mesh-performance-DAN3yAAh.jpg",
+      "hover": "/img/mesh-pearl-CRa09Fy-.jpg"
     },
     "inStock": true,
     "featured": false
@@ -514,11 +498,12 @@
       { "name": "Forest", "hex": "#0B4D2C" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/shell-windbreaker-C7TxA4Uf.jpg",
+      "hover": "/img/shell-storm-Dl4uf06V.jpg"
     },
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "latest": true
   },
   {
     "id": "linen-shirt-011",
@@ -532,11 +517,12 @@
       { "name": "Sky", "hex": "#B8D4E3" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/linen-premium-DAuwlIrc.jpg",
+      "hover": "/img/linen-sky-CkMtM9pW.jpg"
     },
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "latest": true
   },
   {
     "id": "bomber-jacket-012",
@@ -550,8 +536,8 @@
       { "name": "Camel", "hex": "#C19A6B" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/bomber-luxury-D-2V7ue4.jpg",
+      "hover": "/img/bomber-charcoal-CH19CKH2.jpg"
     },
     "inStock": true,
     "featured": true
@@ -568,11 +554,11 @@
       { "name": "Tan", "hex": "#D2B48C" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/cargo-tan-DdEdL0iS.jpg"
     },
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "latest": true
   },
   {
     "id": "tank-top-014",
@@ -587,8 +573,8 @@
       { "name": "Beige", "hex": "#E8DCC6" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/tank-athletic-DqPxNFkO.jpg",
+      "hover": "/img/tank-white-DVjVnSB0.jpg"
     },
     "inStock": true,
     "featured": false
@@ -605,11 +591,12 @@
       { "name": "Clay", "hex": "#B66A50" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/knit-merino-DPYarzeO.jpg",
+      "hover": "/img/knit-moss-D-t_d5b2.jpg"
     },
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "latest": true
   },
   {
     "id": "trousers-016",
@@ -624,8 +611,8 @@
       { "name": "Sand", "hex": "#C2B280" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/trousers-tailored-CsGYFGlZ.jpg",
+      "hover": "/img/trousers-midnight-DOPOKw06.jpg"
     },
     "inStock": true,
     "featured": true
@@ -642,11 +629,12 @@
       { "name": "Graphite", "hex": "#41424C" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/mesh-performance-DAN3yAAh.jpg",
+      "hover": "/img/mesh-pearl-CRa09Fy-.jpg"
     },
     "inStock": true,
-    "featured": false
+    "featured": false,
+    "latest": true
   },
   {
     "id": "shell-jacket-018",
@@ -660,8 +648,8 @@
       { "name": "Forest", "hex": "#0B4D2C" }
     ],
     "images": {
-      "main": "",
-      "hover": ""
+      "main": "/img/shell-windbreaker-C7TxA4Uf.jpg",
+      "hover": "/img/shell-storm-Dl4uf06V.jpg"
     },
     "inStock": true,
     "featured": false
