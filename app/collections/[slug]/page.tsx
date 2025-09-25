@@ -1,11 +1,16 @@
 "use client";
-export default function CategoryPage({ params }: { params: { slug: string } }) {
+import React from "react";
+
+export default function CategoryPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = React.use(params);
+
   return (
-    <div
-      className="custom-container
-    "
-    >
-      <h1>{params.slug}</h1>
+    <div className="custom-container">
+      <h1>{slug}</h1>
     </div>
   );
 }
