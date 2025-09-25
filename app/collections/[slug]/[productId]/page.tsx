@@ -1,9 +1,13 @@
-type Props = {
+export default function ProductPage({
+  params,
+}: {
   params: { slug: string; productId: string };
-};
-
-export default function ProductPage({ params }: Props) {
+}) {
   return (
-    <div className="custom-container">Product Page {params.productId};</div>
+    <div className="custom-container">
+      <h1>Product Page</h1>
+      <p>Category: {params.slug}</p>
+      <p>Product ID: {params.productId}</p>
+    </div>
   );
 }
