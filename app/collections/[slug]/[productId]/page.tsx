@@ -1,5 +1,5 @@
 type Props = {
-  params: { productId: string };
+  params: { slug: string; productId: string };
 };
 
 export default function ProductPage({ params }: Props) {

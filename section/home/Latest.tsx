@@ -1,9 +1,7 @@
 "use client";
 import Carousel from "@/components/ui/Carousel";
-import { useProductsStore } from "@/store/useProductsStore";
 export default function Latest() {
-  const { products, loading, error, fetchProducts } = useProductsStore();
-
+  
   return (
     <div className="bg-neutral-background">
       <div
