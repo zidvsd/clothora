@@ -1,10 +1,13 @@
 "use client";
+import { motion } from "motion/react";
 import Carousel from "@/components/ui/Carousel";
 export default function Latest() {
-  
   return (
     <div className="bg-neutral-background">
-      <div
+      <motion.div
+        whileInView="show"
+        initial="hidden"
+        viewport={{ once: true, amount: 0.2 }}
         id="latest-section"
         className="flex flex-col items-center justify-center space-y-2 custom-container py-24"
       >
@@ -18,7 +21,7 @@ export default function Latest() {
         <div className="mt-8 w-full">
           <Carousel />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

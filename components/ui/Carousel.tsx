@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import { useProductsStore } from "@/store/useProductsStore";
 import Link from "next/link";
+import { containerVariant } from "@/lib/animate/animate";
 import "keen-slider/keen-slider.min.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "motion/react";
@@ -55,15 +56,18 @@ export default function Carousel() {
       {/* Slider */}
       <div ref={sliderRef} className="keen-slider w-full">
         <motion.div
-          variants={carouselContainer}
+          variants={containerVariant}
           initial="hidden"
           animate="show"
+          viewport={{ once: true, amount: 0.6 }}
           className="w-full flex"
         >
           {filteredProductsLatest?.map((product, index) => (
             <motion.div
-              key={index}
-              variants={item}
+              key={product.id}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.2, duration: 0.5 }}
               className="keen-slider__slide"
             >
               <Link

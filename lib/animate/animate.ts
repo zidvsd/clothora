@@ -28,6 +28,15 @@ export const carouselContainer = {
 };
 export const item = {
   hidden: { opacity: 0, x: -20 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.3 } },
-  exit: { opacity: 0, x: -20, transition: { duration: 0.2 } },
+  show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+};
+
+export const containerVariant = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+    staggerChildren: 0.2,
+  },
 };
