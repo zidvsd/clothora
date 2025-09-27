@@ -1,4 +1,4 @@
-import { easeOut } from "motion";
+import { easeIn, easeOut } from "motion";
 
 // lib/animate/animate.ts
 export const container = {
@@ -45,5 +45,11 @@ export const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.2 },
-  transition: { duration: 1.2, ease: easeOut },
+  transition: { duration: 0.8, ease: easeOut },
+};
+
+export const fadeInUpLoop = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.3, ease: easeOut } },
+  exit: { opacity: 0, y: 20, transition: { duration: 0.2, ease: easeIn } },
 };
