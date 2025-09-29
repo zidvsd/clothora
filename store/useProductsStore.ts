@@ -36,6 +36,8 @@ export const useProductsStore = create<ProductsState>((set, get) => ({
     if (get().products) return;
     set({ loading: true, error: null });
     try {
+      await new Promise((res) => setTimeout(res, 1000));
+
       const res = await fetch(url);
       if (!res.ok) throw new Error("Failed to fetch products");
       const data: Product[] = await res.json();
