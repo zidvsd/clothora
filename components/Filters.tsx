@@ -1,12 +1,13 @@
 "use client";
 import { motion, AnimatePresence } from "motion/react";
 import { useToggle } from "@/hooks/useToggle";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Funnel } from "lucide-react";
 import { fadeInUpLoop } from "@/lib/animate/animate";
 import filterData from "@/data/filters.json";
 
 interface FiltersProps {
+  title: string;
   filters: {
     priceRange: number[];
     colors: string[];
@@ -19,10 +20,17 @@ interface FiltersProps {
       sizes: string[];
     }>
   >;
+  productCount: number;
 }
 
-export default function Filters({ filters, setFilters }: FiltersProps) {
+export default function Filters({
+  title,
+  filters,
+  setFilters,
+  productCount,
+}: FiltersProps) {
   const sidebar = useToggle(false);
+
   const toggleSize = (size: string) => {
     setFilters((prev) => ({
       ...prev,
@@ -47,16 +55,28 @@ export default function Filters({ filters, setFilters }: FiltersProps) {
         sidebar.setTrue();
       }
     };
-
-    handleResize(); // run once on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [sidebar]);
+
+  const handleClearFilters = () => {
+    setFilters({ priceRange: [0, 500], colors: [], sizes: [] });
+  };
+
+  const hasFilters =
+    filters.priceRange[0] !== 0 ||
+    filters.priceRange[1] !== 500 ||
+    filters.colors.length > 0 ||
+    filters.sizes.length > 0;
   return (
     <div>
+      <h1 className="text-3xl  font-light text-left">{title}</h1>
+      <h3 className="text-neutral-500 mt-2">{`${productCount} products`}</h3>
+
       <button
         onClick={sidebar.toggle}
-        className="lg:hidden flex gap-2 items-center"
+        className="cursor-pointer lg:hidden flex gap-2 items-center mt-4"
       >
         <Funnel className="size-4" />
         <span className="text-sm">Filters</span>
@@ -70,9 +90,19 @@ export default function Filters({ filters, setFilters }: FiltersProps) {
             animate="animate"
             exit="exit"
             variants={fadeInUpLoop}
-            className="flex flex-col"
+            className="flex flex-col w-full mt-4"
           >
-            <h3 className="mt-4 lg:mt-0 ">FILTERS</h3>
+            <div className="flex justify-between items-center">
+              <h3 className="mt-4 lg:mt-0">FILTERS</h3>
+              {hasFilters && (
+                <button
+                  onClick={handleClearFilters}
+                  className="cursor-pointer text-neutral-500 text-sm  hover:text-black transition"
+                >
+                  Clear All
+                </button>
+              )}
+            </div>
 
             {/* price range */}
             <div className="flex flex-col gap-2 w-full mt-6">
@@ -102,7 +132,7 @@ export default function Filters({ filters, setFilters }: FiltersProps) {
             {/* colors */}
             <div className="flex flex-col gap-2 mt-8">
               <span className="text-sm font-medium">Colors</span>
-              <ul className="grid grid-cols-5 w-full gap-2 mt-4 place-items-start">
+              <ul className="grid grid-cols-5 w-full gap-2 place-items-start">
                 {filterData.colors.map((color, index) => (
                   <li key={index}>
                     <button
@@ -119,6 +149,7 @@ export default function Filters({ filters, setFilters }: FiltersProps) {
                 ))}
               </ul>
             </div>
+
             {/* sizes */}
             <div className="flex flex-col gap-2 mt-8">
               <span className="text-sm font-medium">Sizes</span>

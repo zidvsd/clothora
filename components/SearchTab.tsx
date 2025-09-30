@@ -14,6 +14,7 @@ export default function SearchTab({ isOpen, closeSearch }: SearchTabProps) {
     <AnimatePresence>
       {/* Overlay */}
       <motion.div
+        key={"overlay"}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.2 }}
@@ -23,6 +24,7 @@ export default function SearchTab({ isOpen, closeSearch }: SearchTabProps) {
 
       {/* Search bar */}
       <motion.section
+        key={"search-bar"}
         initial={{ y: 60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
