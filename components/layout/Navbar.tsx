@@ -25,7 +25,9 @@ export default function Navbar() {
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, [menu]);
-
+  const handlePageChange = () => {
+    menu.setFalse();
+  };
   return (
     <section className="bg-background">
       <div className="relative py-4 w-full custom-container flex flex-row justify-between items-center">
@@ -125,6 +127,7 @@ export default function Navbar() {
                 {navs.map((nav) => (
                   <motion.div key={nav.label} variants={item}>
                     <Link
+                      onClick={handlePageChange}
                       href={nav.href}
                       className={`opacity-70 hover-utility hover:opacity-100 text-3xl ${
                         activeNav === nav.href ? "opacity-100" : "opacity-70"
@@ -138,13 +141,13 @@ export default function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
-        {search.state && (
-          <SearchTab
-            isOpen={search.state}
-            closeSearch={search.setFalse} // or search.toggle if you want toggle
-          />
-        )}{" "}
       </div>
+      {search.state && (
+        <SearchTab
+          isOpen={search.state}
+          closeSearch={search.setFalse} // or search.toggle if you want toggle
+        />
+      )}{" "}
     </section>
   );
 }

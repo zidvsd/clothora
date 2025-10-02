@@ -81,8 +81,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-gray-200 mt-8 py-4 flex flex-col sm:flex-row justify-between items-center text-gray-500 text-sm px-6">
-        <span>© 2024 Minimalist. All rights reserved.</span>
+      <div className="custom-container border-t border-gray-200 mt-8 py-4 flex flex-col sm:flex-row justify-between items-center text-gray-500 text-sm px-6">
+        <span>© 2024 Clothora. All rights reserved.</span>
         <div className="flex gap-4 mt-2 sm:mt-0">
           <span className="hover:text-black cursor-pointer hover-utility">
             Privacy Policy

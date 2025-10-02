@@ -2,12 +2,38 @@
 
 import { Search, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { input } from "motion/react-client";
+import { useEffect, useRef } from "react";
 interface SearchTabProps {
   isOpen: boolean;
   closeSearch: () => void;
 }
 
 export default function SearchTab({ isOpen, closeSearch }: SearchTabProps) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        closeSearch();
+        inputRef.current?.blur();
+      }
+    };
+
+    if (isOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen, closeSearch]);
+
+  useEffect(() => {
+    if (isOpen) {
+      inputRef.current?.focus();
+    }
+  }, [isOpen]);
   if (!isOpen) return null;
 
   return (
@@ -30,10 +56,11 @@ export default function SearchTab({ isOpen, closeSearch }: SearchTabProps) {
         transition={{ duration: 0.4 }}
         className="absolute top-0 left-0 w-full bg-background z-50 shadow-md border-b-neutral-200 border-b "
       >
-        <div className="custom-container py-4 flex items-center justify-between gap-4">
+        <div className="custom-container py-4 mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-4 w-full">
             <Search className="text-neutral-500" />
             <input
+              ref={inputRef}
               type="text"
               placeholder="Search for products..."
               className="w-full text-black focus:outline-none"
