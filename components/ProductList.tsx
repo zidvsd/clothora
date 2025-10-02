@@ -9,7 +9,7 @@ import { Product, Filters as FiltersType } from "@/lib/utils";
 
 interface ProductListProps {
   title: string;
-  filters: any;
+  filters: FiltersType;
   setFilters: React.Dispatch<React.SetStateAction<FiltersType>>;
   products: Product[];
 }
