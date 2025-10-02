@@ -35,3 +35,17 @@ export function filterProducts(products: Product[], filters: Filters) {
     return matchesPrice && matchesColor && matchesSize;
   });
 }
+export function capitalizeTitle(str: string) {
+  return str
+    .split("-")
+    .map((ch) => ch.charAt(0).toUpperCase() + ch.slice(1))
+    .join(" ");
+}
+export function normalizeStringCategory(str: string) {
+  const exceptions = ["pants", "jeans", "sleeveless", "shorts", "jackets"];
+
+  if (exceptions.includes(str)) {
+    return str;
+  }
+  return str.endsWith("s") ? str.slice(0, -1) : str;
+}
