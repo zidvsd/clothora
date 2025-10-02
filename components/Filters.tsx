@@ -5,21 +5,11 @@ import React, { useEffect, useState } from "react";
 import { Funnel } from "lucide-react";
 import { fadeInUpLoop } from "@/lib/animate/animate";
 import filterData from "@/data/filters.json";
-
+import { Filters as FiltersType } from "@/lib/utils";
 interface FiltersProps {
   title: string;
-  filters: {
-    priceRange: number[];
-    colors: string[];
-    sizes: string[];
-  };
-  setFilters: React.Dispatch<
-    React.SetStateAction<{
-      priceRange: number[];
-      colors: string[];
-      sizes: string[];
-    }>
-  >;
+  filters: FiltersType;
+  setFilters: React.Dispatch<React.SetStateAction<FiltersType>>;
   productCount: number;
 }
 

@@ -5,10 +5,12 @@ import Link from "next/link";
 import Skeleton from "react-loading-skeleton";
 import { fadeInUp, containerVariant } from "@/lib/animate/animate";
 import "react-loading-skeleton/dist/skeleton.css";
-import { Product } from "@/lib/utils";
+import { Product, Filters as FiltersType } from "@/lib/utils";
 
 interface ProductListProps {
   title: string;
+  filters: any;
+  setFilters: React.Dispatch<React.SetStateAction<FiltersType>>;
   products: Product[];
 }
 
