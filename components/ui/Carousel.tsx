@@ -55,7 +55,11 @@ export default function Carousel() {
   return (
     <div className="relative w-full">
       {/* Slider */}
-      <div ref={sliderRef} className="keen-slider w-full">
+      <div
+        ref={sliderRef}
+        key={filteredProductsLatest?.length}
+        className="keen-slider w-full"
+      >
         <motion.div
           variants={containerVariant}
           initial="hidden"
