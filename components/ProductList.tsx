@@ -9,8 +9,6 @@ import { Product } from "@/lib/utils";
 
 interface ProductListProps {
   title: string;
-  filters: any;
-  setFilters: any;
   products: Product[];
 }
 
