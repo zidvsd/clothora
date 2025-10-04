@@ -10,11 +10,20 @@ interface SearchTabProps {
   isOpen: boolean;
   closeSearch: () => void;
 }
-
+interface Product {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  images: {
+    main: string;
+    hover?: string;
+  };
+}
 export default function SearchTab({ isOpen, closeSearch }: SearchTabProps) {
   const { products } = useProductsStore();
   const [value, setValue] = useState("");
-  const [matchedProducts, setMatchedProducts] = useState<any[]>([]);
+  const [matchedProducts, setMatchedProducts] = useState<Product[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleSearch = (val: string) => {
@@ -144,8 +153,8 @@ export default function SearchTab({ isOpen, closeSearch }: SearchTabProps) {
                 ))
               ) : (
                 <p className="px-6 py-3 text-sm text-center text-neutral-500">
-                  No results found for "
-                  <span className="font-medium">{value}</span>"
+                  No results found for &quot;
+                  <span className="font-medium">{value}</span>&quot;
                 </p>
               )}
             </div>
