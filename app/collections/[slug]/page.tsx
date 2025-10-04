@@ -15,7 +15,6 @@ export default function Page() {
   });
   const params = useParams<{ slug: string }>();
   const { products } = useProductsStore();
-
   const filteredProducts = useMemo(() => {
     if (!products) return [];
 
@@ -31,8 +30,8 @@ export default function Page() {
   }, [products, filters, params.slug]);
 
   return (
-    <div className="custom-container grid grid-cols-1 lg:grid-cols-[20%_80%] gap-4">
-      <div className="mt-8 w-full">
+    <div className="custom-container grid grid-cols-1 lg:grid-cols-[20%_80%] gap-4 pt-8">
+      <div className="mt-4 lg:mt-0 w-full">
         <Filters
           title={capitalizeTitle(params.slug)}
           filters={filters}

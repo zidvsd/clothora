@@ -18,8 +18,8 @@ export default function Page() {
   }, [products, filters]);
 
   return (
-    <div className="custom-container grid grid-cols-1 lg:grid-cols-[20%_80%] gap-4">
-      <div className="mt-8 w-full">
+    <div className="custom-container grid grid-cols-1 lg:grid-cols-[20%_80%] gap-4 pt-8">
+      <div className="mt-4 lg:mt-0 w-full">
         <Filters
           title="All Collections"
           filters={filters}

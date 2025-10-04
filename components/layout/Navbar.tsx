@@ -29,7 +29,7 @@ export default function Navbar() {
     menu.setFalse();
   };
   return (
-    <section className="bg-background">
+    <section className="bg-background sticky top-0 z-50 border-b border-neutral-200 shadow-sm">
       <div className="relative py-4 w-full custom-container flex flex-row justify-between items-center">
         {/* Logo */}
         <div

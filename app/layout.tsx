@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ProductsProvider from "@/components/ProductsProvider";
 import PageAnimation from "@/lib/animate/PageAnimation";
+import { ToastProvider } from "@/components/ToastProvider";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -26,9 +27,9 @@ export default function RootLayout({
         className={`${poppins.variable} bg-background font-poppins antialiased`}
       >
         <ProductsProvider />
+        <ToastProvider />
         <Navbar />
         <PageAnimation>{children}</PageAnimation>
-
         <Footer />
       </body>
     </html>

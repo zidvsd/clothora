@@ -16,13 +16,13 @@ interface ProductListProps {
 
 export default function ProductList({ products, title }: ProductListProps) {
   return (
-    <section className="py-8">
+    <section>
       <motion.div
         variants={containerVariant}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="w-full gap-4 grid grid-cols-2 lg:grid-cols-3 border-t border-neutral-200 lg:border-none"
+        className="w-full gap-4 grid grid-cols-2 lg:grid-cols-3 border-t border-neutral-200 lg:border-none "
       >
         {products.length === 0
           ? Array.from({ length: 6 }).map((_, i) => (
