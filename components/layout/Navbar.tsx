@@ -8,8 +8,10 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 import SearchTab from "../SearchTab";
 import { navs } from "@/data/navs";
+import { useCartStore } from "@/store/useCartStore";
 import { container, item } from "@/lib/animate/animate";
 export default function Navbar() {
+  const items = useCartStore((state) => state.items);
   const menu = useToggle(false);
   const search = useToggle(false);
   const pathname = usePathname(); // Current route
@@ -74,9 +76,14 @@ export default function Navbar() {
 
           <Link
             href={"/cart"}
-            className="hover-utility cursor-pointer hover:bg-neutral-300 p-2 rounded-full"
+            className="hover-utility relative cursor-pointer hover:bg-neutral-300 p-2 rounded-full"
           >
-            <ShoppingBag className="size-6" />
+            <ShoppingBag className="size-6 relative" />
+            {items.length > 0 && (
+              <span className="absolute -top-1 -right-1 flex items-center justify-center w-4 h-4 text-[10px] font-semibold bg-black text-white rounded-full">
+                {items.length}
+              </span>
+            )}
           </Link>
 
           {/* Mobile menu button */}

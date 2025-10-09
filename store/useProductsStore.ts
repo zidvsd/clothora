@@ -7,7 +7,7 @@ type Images = {
   main: string;
   hover: string;
 };
-type Product = {
+export type Product = {
   id: string;
   name: string;
   category: string;
