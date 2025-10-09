@@ -4,7 +4,7 @@ export interface Product {
   name: string;
   price: number;
   category: string;
-  colors: { hex: string }[];
+  colors: { name: string; hex: string }[];
   sizes: string[];
   images: { main: string };
   inStock: boolean;
