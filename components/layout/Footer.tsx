@@ -13,7 +13,7 @@ import {
 import { navs } from "@/data/navs";
 export default function Footer() {
   return (
-    <footer className="bg-background border-t border-gray-200 mt-16">
+    <footer className="bg-background border-t border-gray-200 ">
       <div className="custom-container py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo & Description */}
         <div className="flex flex-col gap-4">

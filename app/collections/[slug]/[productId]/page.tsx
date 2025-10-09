@@ -6,10 +6,15 @@ import { useState } from "react";
 import { toast } from "sonner";
 import Image from "next/image";
 import RelatedProducts from "@/components/RelatedProducts";
+import { useCartStore } from "@/store/useCartStore";
+import { Product } from "@/lib/utils";
 export default function ProductPage() {
   const { products } = useProductsStore();
   const { productId } = useParams();
-
+  const addItem = useCartStore((state) => state.addItem);
+  const handleAddToCart = (product: Product, size: string, color: string) => {
+    addItem(product, size, color);
+  };
   const product = products?.find((p) => p.id === productId);
 
   // local state for selected options
@@ -127,7 +132,7 @@ export default function ProductPage() {
                 -
               </button>
 
-              <span className="">{quantity}</span>
+              <span>{quantity}</span>
 
               <button
                 className="py-2 px-4 border border-neutral-200 text-neutral-700 hover-utility hover:border-black"
@@ -139,8 +144,13 @@ export default function ProductPage() {
           </div>
 
           <button
-            onClick={() => toast.success("Successfully added product.")}
-            className="mt-8 px-6 py-3 w-full bg-black text-white  hover:bg-neutral-800 hover-utility"
+            onClick={() => {
+              if (product && selectedSize && selectedColor) {
+                toast.success("Successfully added product."),
+                  handleAddToCart(product, selectedSize, selectedColor);
+              }
+            }}
+            className="cursor-pointer mt-8 px-6 py-3 w-full bg-black text-white  hover:bg-neutral-800 hover-utility"
           >
             Add to Cart
           </button>

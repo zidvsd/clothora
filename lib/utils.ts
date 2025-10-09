@@ -49,3 +49,27 @@ export function normalizeStringCategory(str: string) {
   }
   return str.endsWith("s") ? str.slice(0, -1) : str;
 }
+
+export const generateOrderNum = () => {
+  const timestamp = Date.now().toString(36); // encodes time
+  const random = Math.random().toString(36).substring(2, 6).toUpperCase();
+  return `${timestamp}${random}`;
+};
+export const getFormattedDate = () => {
+  const today = new Date();
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return today.toLocaleDateString("en-US", options);
+};
+export const getFormattedTime = () => {
+  const now = new Date();
+  const options: Intl.DateTimeFormatOptions = {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  };
+  return now.toLocaleTimeString("en-US", options);
+};
