@@ -13,7 +13,7 @@ interface ProductListProps {
   products: Product[];
 }
 
-export default function ProductList({ products, title }: ProductListProps) {
+export default function ProductList({ products }: ProductListProps) {
   return (
     <section>
       <motion.div

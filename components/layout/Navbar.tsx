@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { useToggle } from "@/hooks/useToggle";
 import { usePathname } from "next/navigation";
-import { motion, AnimatePresence, stagger } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import SearchTab from "../SearchTab";
 import { navs } from "@/data/navs";
 import { container, item } from "@/lib/animate/animate";

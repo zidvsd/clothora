@@ -1,5 +1,5 @@
 "use client";
-import { CartItem, useCartStore } from "@/store/useCartStore";
+import { useCartStore } from "@/store/useCartStore";
 import Link from "next/link";
 import Image from "next/image";
 import { Trash2, ShoppingBag } from "lucide-react";

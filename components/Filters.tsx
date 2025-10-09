@@ -1,7 +1,7 @@
 "use client";
 import { motion, AnimatePresence } from "motion/react";
 import { useToggle } from "@/hooks/useToggle";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Funnel } from "lucide-react";
 import { fadeInUpLoop } from "@/lib/animate/animate";
 import filterData from "@/data/filters.json";

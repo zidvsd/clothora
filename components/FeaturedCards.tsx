@@ -2,7 +2,7 @@
 import { useProductsStore } from "@/store/useProductsStore";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { containerVariant, item } from "@/lib/animate/animate";
+import { containerVariant } from "@/lib/animate/animate";
 import Link from "next/link";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";

@@ -1,6 +1,5 @@
 "use client";
 import { useRef } from "react";
-import { ArrowRight } from "lucide-react";
 export default function ViewLatestButton() {
   const sectionRef = useRef<HTMLElement | null>(null);
 
