@@ -12,8 +12,13 @@ export default function ProductPage() {
   const { products } = useProductsStore();
   const { productId } = useParams();
   const addItem = useCartStore((state) => state.addItem);
-  const handleAddToCart = (product: Product, size: string, color: string) => {
-    addItem(product, size, color);
+  const handleAddToCart = (
+    product: Product,
+    size: string,
+    color: string,
+    quantity: number
+  ) => {
+    addItem(product, size, color, quantity);
   };
   const product = products?.find((p) => p.id === productId);
 
@@ -24,7 +29,7 @@ export default function ProductPage() {
   const [selectedColor, setSelectedColor] = useState<string | null>(
     product?.colors[0].name || ""
   );
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState<number>(1);
   if (!product) {
     return <p>Product not found</p>;
   }
@@ -147,7 +152,12 @@ export default function ProductPage() {
             onClick={() => {
               if (product && selectedSize && selectedColor) {
                 toast.success("Successfully added product."),
-                  handleAddToCart(product, selectedSize, selectedColor);
+                  handleAddToCart(
+                    product,
+                    selectedSize,
+                    selectedColor,
+                    quantity
+                  );
               }
             }}
             className="cursor-pointer mt-8 px-6 py-3 w-full bg-black text-white  hover:bg-neutral-800 hover-utility"

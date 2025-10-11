@@ -13,7 +13,8 @@ type CartState = {
   addItem: (
     product: Product,
     selectedSize: string,
-    selectedColor: string
+    selectedColor: string,
+    quantity?: number
   ) => void;
   removeItem: (id: string, size: string, color: string) => void;
   updateQuantity: (
@@ -32,7 +33,7 @@ export const useCartStore = create<CartState>()(
       items: [],
 
       // ✅ Add to cart
-      addItem: (product, selectedSize, selectedColor) => {
+      addItem: (product, selectedSize, selectedColor, quantity = 1) => {
         const existing = get().items.find(
           (item) =>
             item.id === product.id &&
@@ -47,7 +48,7 @@ export const useCartStore = create<CartState>()(
               item.id === product.id &&
               item.size === selectedSize &&
               item.color === selectedColor
-                ? { ...item, quantity: item.quantity + 1 }
+                ? { ...item, quantity: item.quantity + quantity }
                 : item
             ),
           });
@@ -60,7 +61,7 @@ export const useCartStore = create<CartState>()(
                 ...product,
                 size: selectedSize,
                 color: selectedColor,
-                quantity: 1,
+                quantity,
               },
             ],
           });
