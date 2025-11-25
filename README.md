@@ -1,121 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body>
-  <h1>🌐 Live Demo</h1>
-  <p>
-    Check it out on Vercel:
-    <a href="https://clothora-amber.vercel.app/" target="_blank">
-      https://clothora-amber.vercel.app/
-    </a>
-  </p>
-  <h1>👕 Clothora</h1>
-  <p>
-    A minimalistic clothing store web app built with <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.  
-    Clothora brings a clean, modern interface designed to make fashion browsing effortless and elegant.  
-    It features smooth animations, responsive layouts, and efficient state management powered by <strong>Zustand</strong>.
-  </p>
-  <h2>✨ Features</h2>
-  <ul>
-    <li><strong>Minimalist UI</strong>: Focused on simplicity and elegance with a modern design aesthetic.</li>
-    <li><strong>Product Carousel</strong>: Smooth and responsive carousel built with <code>Keen Slider</code>.</li>
-    <li><strong>Dynamic Loading Skeletons</strong>: Ensures a seamless browsing experience while data loads.</li>
-    <li><strong>Lucide Icons</strong>: Clean, lightweight icons for navigation and actions.</li>
-    <li><strong>State Management</strong>: Powered by <code>Zustand</code> for fast and reliable global state handling.</li>
-    <li><strong>Motion Animations</strong>: Beautiful transitions and interactive effects using <code>Framer Motion</code>-compatible library.</li>
-    <li><strong>Responsive Design</strong>: Optimized for mobile, tablet, and desktop devices.</li>
-  </ul>
-  <h3>🧩 Tech Stack</h3>
-  <ul>
-    <li>Next.js 15</li>
-    <li>React 19</li>
-    <li>Tailwind CSS 4</li>
-    <li>TypeScript 5</li>
-    <li>Zustand 5</li>
-    <li>Keen Slider</li>
-    <li>Lucide React</li>
-    <li>React Loading Skeleton</li>
-    <li>Sonner (toast notifications)</li>
-  </ul>
-  <h3>⚙️ Prerequisites</h3>
-  <ul>
-    <li>Node.js (version 18 or higher)</li>
-    <li>NPM or Yarn</li>
-  </ul>
-  <h3>🚀 Installation</h3>
-  <ol>
-    <li>
-      Clone the repository:
-      <pre><code>git clone https://github.com/yourusername/clothora.git</code></pre>
-    </li>
-    <li>
-      Navigate to the project directory:
-      <pre><code>cd clothora</code></pre>
-    </li>
-    <li>
-      Install dependencies:
-      <pre><code>npm install</code></pre>
-    </li>
-    <li>
-      Start the development server:
-      <pre><code>npm run dev</code></pre>
-      <p>
-        Then open the app at
-        <a href="http://localhost:3000" target="_blank">
-          http://localhost:3000
-        </a>.
-      </p>
-    </li>
-  </ol>
-  <h2>🧥 Usage</h2>
-  <h3>Browse Products</h3>
-  <p>
-    Discover clothing collections through an elegant, scroll-based interface.
-    Each product features smooth hover animations and detailed previews.
-  </p>
-  <h3>Carousel</h3>
-  <p>
-    Highlight featured collections and new arrivals with the <strong>Keen Slider</strong>-powered carousel.
-  </p>
-  <h3>Animations</h3>
-  <p>
-    <code>Motion</code> provides fade, slide, and stagger effects to make transitions seamless and visually appealing.
-  </p>
-  <pre><code>
-import { motion } from "motion/react";
+# Clothora
 
-const fadeUp = {
-hidden: { opacity: 0, y: 30 },
-visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-};
+![version](https://img.shields.io/badge/version-0.1.0-blue)
+![next](https://img.shields.io/badge/Next.js-15.5.3-black)
 
-export default function HeroText() {
-return (
-&lt;motion.h1 variants={fadeUp} initial="hidden" animate="visible"&gt;
-Discover Minimalism with Clothora
-&lt;/motion.h1&gt;
-);
+Clothora is a minimal, modern clothing storefront built with Next.js, TypeScript and Tailwind CSS. It demonstrates a clean UI, smooth animations, and simple state management suitable for small e-commerce prototypes and design-focused storefronts.
+
+**Live demo:** https://clothora-amber.vercel.app/
+
+## Why this project is useful
+
+- **Design-focused starter:** Minimal UI and responsive layouts for quick prototyping.
+- **Modern stack:** Next.js 15, React 19, TypeScript 5 and Tailwind CSS 4.
+- **Small but complete:** Product lists, carousel, cart flows and toast notifications.
+- **Easy state:** Global state handled with `zustand` for a tiny, easy-to-follow store.
+
+## Key features
+
+- Product listing and collections (under `app/collections`)
+- Product detail pages and nested routing (dynamic routes in `app/collections/[slug]/[productId]`)
+- Responsive carousel using `keen-slider`
+- Loading skeletons with `react-loading-skeleton`
+- Toast notifications with `sonner`
+- Lightweight global state using `zustand`
+
+## Tech stack
+
+- Next.js 15 (App Router)
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- Zustand for state management
+- Keen Slider, Lucide React, Sonner, html-to-image
+
+## Getting started
+
+Prerequisites
+
+- Node.js 18+ (tested with Node 18/20)
+- npm or yarn
+
+Clone and run
+
+```bash
+git clone <your-repo-url> clothora
+cd clothora
+npm install
+# or: yarn
+```
+
+Development
+
+```bash
+npm run dev
+# Open http://localhost:3000
+```
+
+Build and production
+
+```bash
+npm run build
+npm start
+```
+
+Lint
+
+```bash
+npm run lint
+```
+
+Notes
+
+- The project uses Turbopack flags for `dev` and `build` (`--turbopack`). Remove these flags if you prefer the standard Next.js bundler or run into compatibility issues.
+- If you use a Node version manager, ensure your active Node version matches the prerequisites.
+
+## Project structure (overview)
+
+- `app/` — Next.js App Router pages and route groups (primary app code)
+- `components/` — Shared React components (carousel, product list, UI primitives)
+- `section/` — Page sections (home/hero/featured)
+- `lib/` — Utilities and animation helpers
+- `store/` — `zustand` stores (`useCartStore.ts`, `useProductsStore.ts`)
+- `public/` — Static assets and sample data
+
+Explore the `app/` directory to see how routes are organized and how components are composed.
+
+## Usage examples
+
+Import a component in a page (TypeScript / Next.js App Router example):
+
+```tsx
+import ProductList from "@/components/ProductList";
+
+export default function Page() {
+  return <ProductList />;
 }
-</code></pre>
+```
 
-  <h2>🤝 Contributing</h2>
-  <p>Have ideas or want to improve the design? Contributions are welcome!</p>
-  <h3>How to contribute:</h3>
-  <ol>
-    <li>Fork the repository.</li>
-    <li>Create a new branch for your feature or fix.</li>
-    <li>Make your changes and test thoroughly.</li>
-    <li>Submit a pull request with a detailed description.</li>
-  </ol>
-  <h2>📩 Contact</h2>
-  <p>
-    For inquiries or collaboration, feel free to email:
-    <a href="mailto:rashidvisda@gmail.com">rashidvisda@gmail.com</a>.
-  </p>
-  <hr />
-  <p><em>Crafted with ❤️ using Next.js and Tailwind CSS.</em></p>
-</body>
-</html>
+Programmatic cart update using the `useCartStore` (simplified):
+
+```ts
+import useCartStore from "@/store/useCartStore";
+
+const add = useCartStore((s) => s.addProduct);
+add({ id: "sku-123", name: "T-Shirt", price: 29.99 });
+```
+
+## Where to get help
+
+- If this repo includes an active maintainer, open an issue.
+- For questions about the codebase, contact the repository owner or the original author: `rashidvisda@gmail.com`.
+
+## Contributing
+
+See `CONTRIBUTING.md` for brief contribution pointers and a minimal workflow.
+
+Please keep contributions focused and small: design improvements, accessibility, test coverage, or bug fixes are all welcome.
+
+## Maintainers
+
+- Original author / contact: `rashidvisda@gmail.com`
+
+If you would like to become a contributor, open an issue or submit a PR and reference the changes you'd like to make.
+
+## Acknowledgements
+
+- Built as a small demo and design prototype inspired by modern e-commerce patterns.
+
+---
+
+_Generated and updated by project maintainer tooling._
